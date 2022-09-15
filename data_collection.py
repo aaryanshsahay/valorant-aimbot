@@ -13,15 +13,15 @@ import time
 def TakeScreenShot():
   '''
   Input : None
-  
+
   Output : None
-  
+
   Takes a screenshot, converts color channel and saves the image.
-    
+
   '''
-	screenshot = np.array(ImageGrab.grab(bbox=(640,220,1280,860)))
-	screenshot = cv2.cvtColor(screenshot, cv2.COLOR_BGR2RGB)
-	cv2.imwrite(f'images/{filename}', screenshot)
+  screenshot = np.array(ImageGrab.grab(bbox=(640,220,1280,860)))
+  screenshot = cv2.cvtColor(screenshot, cv2.COLOR_BGR2RGB)
+  cv2.imwrite(f'images/{filename}', screenshot)
 
 
 
